@@ -1,0 +1,574 @@
+{
+ "updated": "2026-10-20T02:26:48Z",
+ "cutoff": "2026-10-19T12:00:00Z",
+ "lastMessageId": "1561917014673727501",
+ "autoMatched": {
+  "588053": "garrett-walden"
+ },
+ "unmatchedCodes": [
+  "574765",
+  "CHASE HOWARD",
+  "ERIC LABOMBARD",
+  "GARRETT D WALDEN",
+  "KAI COLLYMORE"
+ ],
+ "drivers": {
+  "jordan-booth": {
+   "irating": 5222,
+   "peak": 5342,
+   "add": {
+    "starts": 0,
+    "wins": 0,
+    "top5": 0
+   },
+   "lastRace": null,
+   "recent": []
+  },
+  "eric-labombard": {
+   "irating": 6477,
+   "peak": 6925,
+   "add": {
+    "starts": 0,
+    "wins": 0,
+    "top5": 0
+   },
+   "lastRace": null,
+   "recent": []
+  },
+  "brendon-hayes": {
+   "irating": 3796,
+   "peak": 3998,
+   "add": {
+    "starts": 0,
+    "wins": 0,
+    "top5": 0
+   },
+   "lastRace": null,
+   "recent": []
+  },
+  "kai-collymore": {
+   "irating": 4338,
+   "peak": 4851,
+   "add": {
+    "starts": 1,
+    "wins": 0,
+    "top5": 0
+   },
+   "lastRace": "2026-10-20T00:00:00Z",
+   "recent": [
+    {
+     "start": "2026-10-20T00:00:00Z",
+     "series": "NASCAR iRacing Class B Series",
+     "track": "Talladega Superspeedway",
+     "finish": 21,
+     "field": 28,
+     "irating": 4338,
+     "change": -63
+    }
+   ]
+  },
+  "matt-perusini": {
+   "irating": 1486,
+   "peak": 1783,
+   "add": {
+    "starts": 0,
+    "wins": 0,
+    "top5": 0
+   },
+   "lastRace": null,
+   "recent": []
+  },
+  "garrett-walden": {
+   "irating": 3367,
+   "peak": 3367,
+   "add": {
+    "starts": 0,
+    "wins": 0,
+    "top5": 0
+   },
+   "lastRace": null,
+   "recent": []
+  },
+  "corey-ennis": {
+   "irating": 2604,
+   "peak": 3388,
+   "add": {
+    "starts": 0,
+    "wins": 0,
+    "top5": 0
+   },
+   "lastRace": null,
+   "recent": []
+  }
+ },
+ "posts": [
+  {
+   "id": "1554236553008513151",
+   "code": "ERIC LABOMBARD",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Kansas Speedway",
+   "finish": 19,
+   "field": 27,
+   "irating": 6450,
+   "change": -97,
+   "sof": "3432",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-09-28T20:00:00Z"
+  },
+  {
+   "id": "1554275077376442491",
+   "code": "ERIC LABOMBARD",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Kansas Speedway",
+   "finish": 15,
+   "field": 30,
+   "irating": 6394,
+   "change": -56,
+   "sof": "3315",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-09-28T22:00:00Z"
+  },
+  {
+   "id": "1554377810418597960",
+   "code": "CHASE HOWARD",
+   "series": "ARCA Menards Series",
+   "track": "The Bullring",
+   "finish": 3,
+   "field": 9,
+   "irating": 3809,
+   "change": 11,
+   "sof": "2083",
+   "car": "ARCA Chevrolet SS",
+   "start": "2026-09-29T05:45:00Z"
+  },
+  {
+   "id": "1554724459728863306",
+   "code": "GARRETT D WALDEN",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Las Vegas Motor Speedway",
+   "finish": 10,
+   "field": 24,
+   "irating": 3151,
+   "change": 29,
+   "sof": "3366",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-09-30T04:00:00Z"
+  },
+  {
+   "id": "1554735184249753644",
+   "code": "CHASE HOWARD",
+   "series": "NASCAR O'Reilly Auto Parts Series - Fixed",
+   "track": "Las Vegas Motor Speedway",
+   "finish": 12,
+   "field": 23,
+   "irating": 3803,
+   "change": -6,
+   "sof": "3467",
+   "car": "NASCAR O'Reilly Chevrolet Camaro",
+   "start": "2026-09-30T05:00:00Z"
+  },
+  {
+   "id": "1554744867316564059",
+   "code": "CHASE HOWARD",
+   "series": "VW Lite iRX Rookie Series",
+   "track": "[Legacy] Phoenix Raceway - 2008",
+   "finish": 1,
+   "field": 6,
+   "irating": 1832,
+   "change": 88,
+   "sof": "1848",
+   "car": "VW Beetle - Lite",
+   "start": "2026-09-30T06:15:00Z"
+  },
+  {
+   "id": "1555089274079150112",
+   "code": "CHASE HOWARD",
+   "series": "VW Lite iRX Rookie Series",
+   "track": "[Legacy] Phoenix Raceway - 2008",
+   "finish": 1,
+   "field": 6,
+   "irating": 1893,
+   "change": 61,
+   "sof": "1319",
+   "car": "VW Beetle - Lite",
+   "start": "2026-10-01T05:15:00Z"
+  },
+  {
+   "id": "1555098930562334731",
+   "code": "CHASE HOWARD",
+   "series": "iRX Volkswagen Beetle Lite Series",
+   "track": "[Legacy] Phoenix Raceway - 2008",
+   "finish": 2,
+   "field": 5,
+   "irating": 1931,
+   "change": 38,
+   "sof": "1802",
+   "car": "VW Beetle - Lite",
+   "start": "2026-10-01T05:45:00Z"
+  },
+  {
+   "id": "1555361047915790428",
+   "code": "ERIC LABOMBARD",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Las Vegas Motor Speedway",
+   "finish": 1,
+   "field": 29,
+   "irating": 6433,
+   "change": 39,
+   "sof": "3488",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-01T22:00:00Z"
+  },
+  {
+   "id": "1555432901674274948",
+   "code": "CHASE HOWARD",
+   "series": "Rallycross Series - Fixed",
+   "track": "EchoPark Speedway (Atlanta)",
+   "finish": 1,
+   "field": 9,
+   "irating": 2013,
+   "change": 82,
+   "sof": "1749",
+   "car": "Ford Fiesta RS WRC",
+   "start": "2026-10-02T03:30:00Z"
+  },
+  {
+   "id": "1555443565608575028",
+   "code": "CHASE HOWARD",
+   "series": "VW Lite iRX Rookie Series",
+   "track": "[Legacy] Phoenix Raceway - 2008",
+   "finish": 1,
+   "field": 7,
+   "irating": 2076,
+   "change": 63,
+   "sof": "1456",
+   "car": "VW Beetle - Lite",
+   "start": "2026-10-02T04:15:00Z"
+  },
+  {
+   "id": "1555453088645521429",
+   "code": "CHASE HOWARD",
+   "series": "VW Lite iRX Rookie Series",
+   "track": "[Legacy] Phoenix Raceway - 2008",
+   "finish": 2,
+   "field": 5,
+   "irating": 2138,
+   "change": 62,
+   "sof": "2691",
+   "car": "VW Beetle - Lite",
+   "start": "2026-10-02T05:15:00Z"
+  },
+  {
+   "id": "1556922214127902731",
+   "code": "CHASE HOWARD",
+   "series": "VW Lite iRX Rookie Series",
+   "track": "Daytona Rallycross and Dirt Road",
+   "finish": 1,
+   "field": 7,
+   "irating": 2195,
+   "change": 57,
+   "sof": "1399",
+   "car": "VW Beetle - Lite",
+   "start": "2026-10-06T06:15:00Z"
+  },
+  {
+   "id": "1557167258063601726",
+   "code": "ERIC LABOMBARD",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 1,
+   "field": 28,
+   "irating": 6484,
+   "change": 51,
+   "sof": "4178",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-06T22:00:00Z"
+  },
+  {
+   "id": "1557195764571045910",
+   "code": "ERIC LABOMBARD",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 2,
+   "field": 30,
+   "irating": 6536,
+   "change": 52,
+   "sof": "4541",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-07T00:00:00Z"
+  },
+  {
+   "id": "1557534015580536874",
+   "code": "01B2F4",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 9,
+   "field": 24,
+   "irating": 6502,
+   "change": -34,
+   "sof": "3150",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-07T22:00:00Z"
+  },
+  {
+   "id": "1557611462183362582",
+   "code": "B6FADB",
+   "series": "Draft Master Challenge by Simagic",
+   "track": "Talladega Superspeedway",
+   "finish": 1,
+   "field": 21,
+   "irating": 4687,
+   "change": 49,
+   "sof": "2712",
+   "car": "NASCAR Truck Ford F150",
+   "start": "2026-10-08T04:00:00Z"
+  },
+  {
+   "id": "1557621911096397886",
+   "code": "588053",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 6,
+   "field": 26,
+   "irating": 3209,
+   "change": 58,
+   "sof": "3114",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-08T04:00:00Z"
+  },
+  {
+   "id": "1557766996991676521",
+   "code": "588053",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 7,
+   "field": 27,
+   "irating": 3241,
+   "change": 32,
+   "sof": "2365",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-08T14:00:00Z"
+  },
+  {
+   "id": "1557799577497768028",
+   "code": "588053",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 10,
+   "field": 24,
+   "irating": 3261,
+   "change": 20,
+   "sof": "3123",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-08T16:00:00Z"
+  },
+  {
+   "id": "1557838099978125324",
+   "code": "588053",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 11,
+   "field": 21,
+   "irating": 3266,
+   "change": 5,
+   "sof": "3385",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-08T18:00:00Z"
+  },
+  {
+   "id": "1557942459097550891",
+   "code": "B6FADB",
+   "series": "Draft Master Challenge by Simagic",
+   "track": "Talladega Superspeedway",
+   "finish": 11,
+   "field": 25,
+   "irating": 4659,
+   "change": -28,
+   "sof": "2784",
+   "car": "NASCAR Truck Ford F150",
+   "start": "2026-10-09T01:30:00Z"
+  },
+  {
+   "id": "1557954876225486871",
+   "code": "B6FADB",
+   "series": "Draft Master Challenge by Simagic",
+   "track": "Talladega Superspeedway",
+   "finish": 21,
+   "field": 24,
+   "irating": 4541,
+   "change": -118,
+   "sof": "2650",
+   "car": "NASCAR Truck Ford F150",
+   "start": "2026-10-09T02:00:00Z"
+  },
+  {
+   "id": "1558584473245843468",
+   "code": "588053",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 13,
+   "field": 28,
+   "irating": 3280,
+   "change": 14,
+   "sof": "3308",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-10T20:00:00Z"
+  },
+  {
+   "id": "1558654918515097731",
+   "code": "588053",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 5,
+   "field": 24,
+   "irating": 3367,
+   "change": 87,
+   "sof": "4132",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-11T00:00:00Z"
+  },
+  {
+   "id": "1558731517729968136",
+   "code": "574765",
+   "series": "VW Lite iRX Rookie Series",
+   "track": "Daytona Rallycross and Dirt Road",
+   "finish": 2,
+   "field": 7,
+   "irating": 2230,
+   "change": 35,
+   "sof": "1604",
+   "car": "VW Beetle - Lite",
+   "start": "2026-10-11T06:15:00Z"
+  },
+  {
+   "id": "1558741169083523114",
+   "code": "574765",
+   "series": "ARCA Menards Series",
+   "track": "Phoenix Raceway",
+   "finish": 1,
+   "field": 16,
+   "irating": 3835,
+   "change": 32,
+   "sof": "1500",
+   "car": "ARCA Chevrolet SS",
+   "start": "2026-10-11T06:45:00Z"
+  },
+  {
+   "id": "1558922353466023948",
+   "code": "B6FADB",
+   "series": "Draft Master Challenge by Simagic",
+   "track": "Talladega Superspeedway",
+   "finish": 18,
+   "field": 25,
+   "irating": 4498,
+   "change": -84,
+   "sof": "2750",
+   "car": "NASCAR Truck Ford F150",
+   "start": "2026-10-11T18:30:00Z"
+  },
+  {
+   "id": "1559056814966841377",
+   "code": "B6FADB",
+   "series": "NASCAR O'Reilly Auto Parts Series - Fixed",
+   "track": "Charlotte Motor Speedway",
+   "finish": 22,
+   "field": 22,
+   "irating": 4401,
+   "change": -97,
+   "sof": "4164",
+   "car": "NASCAR O'Reilly Ford Mustang",
+   "start": "2026-10-12T03:00:00Z"
+  },
+  {
+   "id": "1560090426394935379",
+   "code": "01B2F4",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Phoenix Raceway",
+   "finish": 3,
+   "field": 28,
+   "irating": 6539,
+   "change": 37,
+   "sof": "4228",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-15T00:00:00Z"
+  },
+  {
+   "id": "1560175049217146945",
+   "code": "574765",
+   "series": "ARCA Menards Series",
+   "track": "Oxford Plains Speedway",
+   "finish": 2,
+   "field": 9,
+   "irating": 3849,
+   "change": 14,
+   "sof": "1732",
+   "car": "ARCA Chevrolet SS",
+   "start": "2026-10-15T05:45:00Z"
+  },
+  {
+   "id": "1560185269179781236",
+   "code": "574765",
+   "series": "VW Lite iRX Rookie Series",
+   "track": "Charlotte Motor Speedway",
+   "finish": 2,
+   "field": 7,
+   "irating": 2273,
+   "change": 43,
+   "sof": "1755",
+   "car": "VW Beetle - Lite",
+   "start": "2026-10-15T06:15:00Z"
+  },
+  {
+   "id": "1560204488789336145",
+   "code": "574765",
+   "series": "NASCAR O'Reilly Auto Parts Series - Fixed",
+   "track": "Phoenix Raceway",
+   "finish": 1,
+   "field": 8,
+   "irating": 3874,
+   "change": 25,
+   "sof": "1402",
+   "car": "NASCAR O'Reilly Chevrolet Camaro",
+   "start": "2026-10-15T07:00:00Z"
+  },
+  {
+   "id": "1560429717738356818",
+   "code": "01B2F4",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Phoenix Raceway",
+   "finish": 13,
+   "field": 28,
+   "irating": 6485,
+   "change": -54,
+   "sof": "2993",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-10-15T22:00:00Z"
+  },
+  {
+   "id": "1561577171980390421",
+   "code": "01B2F4",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Phoenix Raceway",
+   "finish": 7,
+   "field": 27,
+   "irating": 6477,
+   "change": -8,
+   "sof": "3025",
+   "car": "Car 139",
+   "start": "2026-10-19T02:00:00Z"
+  },
+  {
+   "id": "1561916450007154689",
+   "code": "B6FADB",
+   "series": "NASCAR iRacing Class B Series",
+   "track": "Talladega Superspeedway",
+   "finish": 21,
+   "field": 28,
+   "irating": 4338,
+   "change": -63,
+   "sof": "3696",
+   "car": "NASCAR O'Reilly Ford Mustang",
+   "start": "2026-10-20T00:00:00Z"
+  }
+ ]
+}
