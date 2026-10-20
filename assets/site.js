@@ -164,6 +164,146 @@
     }
   }
 
-  function init() { nextRace(); forms(); }
+  /* ---------- Driver profiles: official results (iResultBot) + league results (League Hub) ---------- */
+  var RAW = 'https://raw.githubusercontent.com/jordanbooth0904-spec/40xli-site/main/data/';
+
+  function getJSON(url) {
+    return fetch(url, { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+  }
+  function num(s) { return parseInt(String(s).replace(/[^\d-]/g, ''), 10) || 0; }
+  function fmt(n) { return Number(n).toLocaleString('en-US'); }
+  function ordinal(n) { var s = ['th', 'st', 'nd', 'rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); }
+  function shortDate(iso) {
+    try { return new Date(iso).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'America/New_York' }); }
+    catch (e) { return ''; }
+  }
+  function cleanTrack(t) { return String(t || '').replace(/\s+oval\b.*$/i, '').replace(/\s+NASCAR\b.*$/i, '').trim(); }
+  function byLabel(label) {
+    var hits = Array.prototype.filter.call(document.querySelectorAll('main p, body p'), function (p) {
+      return p.textContent.trim() === label;
+    });
+    return hits[0] || null;
+  }
+  function headingEl(text) {
+    return Array.prototype.filter.call(document.querySelectorAll('h2'), function (x) { return x.textContent.trim() === text; })[0] || null;
+  }
+  // A results block is either <h2> followed by the list, or a header row (<h2> + link) followed by the list.
+  function blockParts(h2) {
+    var sib = h2.nextElementSibling;
+    if (sib && sib.tagName !== 'A') return { block: h2.parentElement, list: sib, header: h2 };
+    return { block: h2.parentElement.parentElement, list: h2.parentElement.nextElementSibling, header: h2.parentElement };
+  }
+  function fillRows(list, items, render) {
+    if (!list || !list.firstElementChild) return;
+    var tpl = list.firstElementChild.cloneNode(true);
+    list.innerHTML = '';
+    items.forEach(function (it) {
+      var row = tpl.cloneNode(true);
+      var v = render(it);
+      var mid = row.children[1];
+      row.children[0].textContent = v[0];
+      if (mid && mid.children.length >= 2) { mid.children[0].textContent = v[1]; mid.children[1].textContent = v[2]; }
+      if (row.children[2]) row.children[2].textContent = v[3];
+      list.appendChild(row);
+    });
+  }
+
+  function driverPage() {
+    var m = location.pathname.match(/\/drivers\/([^/]+)\/?/);
+    if (!m || !window.fetch) return;
+    var slug = m[1];
+    Promise.all([getJSON(RAW + 'drivers.json'), getJSON(RAW + 'official.json'), getJSON(HUB_DATA)]).then(function (res) {
+      var cfg = res[0], off = res[1], hub = res[2];
+      if (!cfg || !cfg.drivers || !cfg.drivers[slug]) return;
+      var me = cfg.drivers[slug];
+      var cutoff = new Date(cfg.cutoff).getTime();
+      var o = off && off.drivers && off.drivers[slug];
+
+      // League results after the cutoff, from the League Hub
+      var lg = { starts: 0, wins: 0, top5: 0, poles: 0, laps: 0 };
+      var leagueRaces = [];
+      if (hub && Array.isArray(hub.races) && me.hub) {
+        hub.races.forEach(function (r) {
+          var res = (r.results || []).filter(function (x) { return x.driverId === me.hub; })[0];
+          if (!res) return;
+          leagueRaces.push({ race: r, res: res });
+          if (new Date(r.date).getTime() > cutoff) {
+            lg.starts++; lg.wins += res.fin === 1; lg.top5 += res.fin <= 5;
+            lg.poles += res.start === 1; lg.laps += res.lapsLed || 0;
+          }
+        });
+        leagueRaces.sort(function (a, b) { return new Date(b.race.date) - new Date(a.race.date); });
+      }
+
+      // iRating + peak
+      if (o) {
+        var irP = byLabel('IRATING'), pkP = byLabel('PEAK IRATING');
+        if (irP && irP.previousElementSibling) irP.previousElementSibling.textContent = fmt(o.irating);
+        if (pkP && pkP.previousElementSibling) pkP.previousElementSibling.textContent = fmt(o.peak);
+      }
+
+      // Career totals: baseline on the page + official races since cutoff + league races since cutoff
+      var adds = {
+        'STARTS': [o ? o.add.starts : 0, lg.starts],
+        'WINS': [o ? o.add.wins : 0, lg.wins],
+        'TOP 5': [o ? o.add.top5 : 0, lg.top5],
+        'POLES': [0, lg.poles],
+        'LAPS LED': [0, lg.laps]
+      };
+      Object.keys(adds).forEach(function (label) {
+        var lab = byLabel(label);
+        if (!lab) return;
+        var tile = lab.parentElement, val = tile.children[0], split = tile.children[2];
+        var a = adds[label];
+        var sm = split && split.textContent.match(/([\d,]+)\s*official\s*·\s*([\d,]+)\s*league/i);
+        if (sm) {
+          var offN = num(sm[1]) + a[0], lgN = num(sm[2]) + a[1];
+          val.textContent = fmt(offN + lgN);
+          split.textContent = fmt(offN) + ' official · ' + fmt(lgN) + ' league';
+        } else if (a[0]) {
+          val.textContent = fmt(num(val.textContent) + a[0]);   // official-only totals
+        }
+      });
+
+      // "Last updated"
+      var lu = Array.prototype.filter.call(document.querySelectorAll('p'), function (p) { return /^Last updated/.test(p.textContent.trim()); })[0];
+      if (lu && off && off.updated) {
+        try { lu.textContent = 'Last updated ' + new Date(off.updated).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'America/New_York' }); } catch (e) {}
+      }
+
+      // Recent league results (only on profiles that show them)
+      var lh = headingEl('Recent results');
+      var lp = lh && blockParts(lh);
+      if (lp && lp.list && leagueRaces.length) {
+        var n = lp.list.children.length || 5;
+        var series = ((hub.settings && hub.settings.name) || 'INRS Cup Series').replace(/\s+series$/i, '');
+        fillRows(lp.list, leagueRaces.slice(0, n), function (x) {
+          return ['P' + x.res.fin, cleanTrack(x.race.track) || x.race.name,
+            series + (x.race.round ? ' · Rd ' + x.race.round : '') + (x.res.start ? ' · Started ' + ordinal(x.res.start) : ''),
+            shortDate(x.race.date)];
+        });
+      }
+
+      // Recent official races, placed just above the league list on profiles that show recent results
+      if (lp && lp.list && o && o.recent && o.recent.length) {
+        lh.textContent = 'Recent league results';
+        var clone = lp.block.cloneNode(true);
+        lp.block.parentNode.insertBefore(clone, lp.block);
+        var ch2 = headingEl('Recent league results');           // first match = the clone
+        ch2.textContent = 'Recent official races';
+        var cp = blockParts(ch2);
+        var link = cp.header.querySelector && cp.header.querySelector('a');
+        if (link) link.remove();
+        if (lp.block.tagName === 'SECTION') clone.style.paddingBottom = '0';
+        else clone.style.marginBottom = '40px';
+        fillRows(cp.list, o.recent, function (r) {
+          var ch = (r.change > 0 ? '+' : '') + r.change;
+          return ['P' + r.finish, r.track, r.series + ' · iRating ' + fmt(r.irating) + ' (' + ch + ')', shortDate(r.start)];
+        });
+      }
+    });
+  }
+
+  function init() { nextRace(); forms(); driverPage(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

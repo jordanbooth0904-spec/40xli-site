@@ -1,0 +1,14 @@
+{
+  "_about": "Roster for the official-results updater. 'code' is iResultBot's Tracked Driver ID (filled automatically when the bot's iRating matches the baseline, or set by hand). 'baseline' is each profile's oval iRating, peak and official totals as of 'cutoff'; races after the cutoff are added on top.",
+  "cutoff": "2026-10-19T12:00:00Z",
+  "channel": "1387198792201146458",
+  "drivers": {
+    "jordan-booth":   { "name": "Jordan Booth",   "number": "41", "hub": "jordan-m-booth",    "code": null,     "baseline": { "irating": 5222, "peak": 5342 } },
+    "eric-labombard": { "name": "Eric Labombard", "number": "58", "hub": "eric-labombard",    "code": "01B2F4", "baseline": { "irating": 6477, "peak": 6925 } },
+    "brendon-hayes":  { "name": "Brendon Hayes",  "number": "40", "hub": null,                "code": null,     "baseline": { "irating": 3796, "peak": 3998 } },
+    "kai-collymore":  { "name": "Kai Collymore",  "number": "39", "hub": "kai-collymore",     "code": "B6FADB", "baseline": { "irating": 4401, "peak": 4851 } },
+    "matt-perusini":  { "name": "Matt Perusini",  "number": "24", "hub": "matthew-perusini",  "code": null,     "baseline": { "irating": 1486, "peak": 1783 } },
+    "garrett-walden": { "name": "Garrett Walden", "number": "43", "hub": "garrett-d-walden",  "code": null,     "baseline": { "irating": 3367, "peak": 3367 } },
+    "corey-ennis":    { "name": "Corey Ennis",    "number": "27", "hub": "corey-ennis",       "code": null,     "baseline": { "irating": 2604, "peak": 3388 } }
+  }
+}
