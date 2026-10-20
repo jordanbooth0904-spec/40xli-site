@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-20T02:33:07Z",
+ "updated": "2026-10-20T04:54:46Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1561917014673727501",
+ "lastMessageId": "1561961463147663383",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden"
@@ -20,15 +20,25 @@
    "recent": []
   },
   "eric-labombard": {
-   "irating": 6477,
+   "irating": 6421,
    "peak": 6925,
    "add": {
-    "starts": 0,
+    "starts": 1,
     "wins": 0,
     "top5": 0
    },
-   "lastRace": null,
-   "recent": []
+   "lastRace": "2026-10-20T02:15:00Z",
+   "recent": [
+    {
+     "start": "2026-10-20T02:15:00Z",
+     "series": "NASCAR Class C Series - Fixed",
+     "track": "Talladega Superspeedway",
+     "finish": 7,
+     "field": 24,
+     "irating": 6421,
+     "change": 16
+    }
+   ]
   },
   "brendon-hayes": {
    "irating": 3796,
@@ -382,6 +392,19 @@
    "sof": "3696",
    "car": "NASCAR O'Reilly Ford Mustang",
    "start": "2026-10-20T00:00:00Z"
+  },
+  {
+   "id": "1561937346373361728",
+   "code": "01B2F4",
+   "series": "NASCAR Class C Series - Fixed",
+   "track": "Talladega Superspeedway",
+   "finish": 7,
+   "field": 24,
+   "irating": 6421,
+   "change": 16,
+   "sof": "4934",
+   "car": "NASCAR Truck Chevrolet Silverado",
+   "start": "2026-10-20T02:15:00Z"
   }
  ]
 }
