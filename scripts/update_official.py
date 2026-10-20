@@ -125,7 +125,14 @@ def main():
     drivers = cfg['drivers']
     code_to_slug = {d['code'].upper(): s for s, d in drivers.items() if d.get('code')}
     code_to_slug.update(state.get('autoMatched', {}))
-    taken = set(code_to_slug.values())
+    # older iResultBot posts show the driver's name instead of a code ("GARRETT D WALDEN")
+    for p in all_posts:
+        words = set(re.findall(r'[a-z]+', p['code'].lower()))
+        for s, d in drivers.items():
+            parts = d['name'].lower().split()
+            if len(words) >= 2 and parts[0] in words and parts[-1] in words:
+                code_to_slug[p['code']] = s
+    taken = set(s for c, s in code_to_slug.items() if not re.search(r'[a-z]{2,}\s', c.lower()))
     # each code's last result before the cutoff and first result after it
     last_before, first_after = {}, {}
     for p in all_posts:
