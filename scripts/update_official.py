@@ -113,10 +113,12 @@ def main():
     posts = {p['id']: p for p in state.get('posts', [])}
 
     new = fetch_messages(cfg['channel'], token, state.get('lastMessageId'), cutoff - timedelta(days=LOOKBACK_DAYS))
+    ignore = {c.upper() for c in cfg.get('ignore', [])}
     for msg in new:
         p = parse_post(msg)
-        if p:
+        if p and p['code'] not in ignore:
             posts[p['id']] = p
+    posts = {k: p for k, p in posts.items() if p['code'] not in ignore}
     last_id = max([int(m['id']) for m in new] + [int(state.get('lastMessageId') or 0)])
 
     all_posts = sorted(posts.values(), key=lambda p: (p['start'], int(p['id'])))
