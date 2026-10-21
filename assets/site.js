@@ -304,34 +304,26 @@
     });
   }
 
-  /* ---------- Livery carousels on driver profiles ---------- */
+  /* ---------- Livery rotator on driver profiles: show 3, arrows rotate through the rest ---------- */
   function liveryCarousels() {
+    var SHOW = 3;
     document.querySelectorAll('.livery-carousel').forEach(function (box) {
       var track = box.querySelector('.livery-track');
+      var figs = track ? Array.prototype.slice.call(track.querySelectorAll(':scope > figure')) : [];
       var prev = box.querySelector('.lc-prev'), next = box.querySelector('.lc-next');
-      if (!track || !prev || !next) return;
-      function step() {
-        var fig = track.querySelector('figure');
-        if (!fig) return track.clientWidth;
-        var gap = parseFloat(getComputedStyle(track).columnGap) || 20;
-        var per = Math.max(1, Math.round((track.clientWidth + gap) / (fig.getBoundingClientRect().width + gap)));
-        return per * (fig.getBoundingClientRect().width + gap);
+      if (figs.length <= SHOW) { box.classList.add('no-scroll'); return; }
+      figs.forEach(function (f) { var im = f.querySelector('img'); if (im) im.loading = 'eager'; });
+      var start = 0;
+      function render() {
+        figs.forEach(function (f, i) {
+          var pos = (i - start + figs.length) % figs.length;
+          f.hidden = pos >= SHOW;
+          f.style.order = pos;
+        });
       }
-      function update() {
-        var max = track.scrollWidth - track.clientWidth;
-        box.classList.toggle('no-scroll', max <= 2);
-        prev.disabled = track.scrollLeft <= 2;
-        next.disabled = track.scrollLeft >= max - 2;
-      }
-      prev.addEventListener('click', function () { track.scrollBy({ left: -step() }); });
-      next.addEventListener('click', function () { track.scrollBy({ left: step() }); });
-      track.addEventListener('scroll', function () { window.requestAnimationFrame(update); }, { passive: true });
-      track.addEventListener('keydown', function (e) {
-        if (e.key === 'ArrowRight') { e.preventDefault(); track.scrollBy({ left: step() }); }
-        if (e.key === 'ArrowLeft') { e.preventDefault(); track.scrollBy({ left: -step() }); }
-      });
-      window.addEventListener('resize', update);
-      update();
+      prev.addEventListener('click', function () { start = (start - 1 + figs.length) % figs.length; render(); });
+      next.addEventListener('click', function () { start = (start + 1) % figs.length; render(); });
+      render();
     });
   }
 
