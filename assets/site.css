@@ -14,3 +14,20 @@ section[id], footer[id] { scroll-margin-top: 16px; }
 button[disabled] { opacity: .6; cursor: progress; }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* livery carousel: 3 across on desktop, 1 + a peek on phones; arrows page through */
+.livery-carousel { position: relative; }
+.livery-track { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; }
+.livery-track::-webkit-scrollbar { display: none; }
+.livery-track > figure { flex: 0 0 calc((100% - 40px) / 3) !important; scroll-snap-align: start; }
+.lc-btn { position: absolute; top: calc((100% - 34px) / 2); transform: translateY(-50%); z-index: 2; width: 48px; height: 48px; border-radius: 999px; border: 1px solid #5B2A86; background: rgba(20, 5, 28, .88); color: #F3F0F7; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background .15s, opacity .15s; }
+.lc-btn:hover { background: #D946EF; color: #14051C; }
+.lc-prev { left: -14px; }
+.lc-next { right: -14px; }
+.lc-btn[disabled] { opacity: 0; pointer-events: none; }
+.livery-carousel.no-scroll .lc-btn { display: none; }
+@media (max-width: 760px) {
+  .livery-track > figure { flex-basis: 82% !important; }
+  .lc-prev { left: 4px; } .lc-next { right: 4px; }
+}
+@media (prefers-reduced-motion: reduce) { .livery-track { scroll-behavior: auto; } }

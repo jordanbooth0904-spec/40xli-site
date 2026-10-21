@@ -304,6 +304,37 @@
     });
   }
 
-  function init() { nextRace(); forms(); driverPage(); }
+  /* ---------- Livery carousels on driver profiles ---------- */
+  function liveryCarousels() {
+    document.querySelectorAll('.livery-carousel').forEach(function (box) {
+      var track = box.querySelector('.livery-track');
+      var prev = box.querySelector('.lc-prev'), next = box.querySelector('.lc-next');
+      if (!track || !prev || !next) return;
+      function step() {
+        var fig = track.querySelector('figure');
+        if (!fig) return track.clientWidth;
+        var gap = parseFloat(getComputedStyle(track).columnGap) || 20;
+        var per = Math.max(1, Math.round((track.clientWidth + gap) / (fig.getBoundingClientRect().width + gap)));
+        return per * (fig.getBoundingClientRect().width + gap);
+      }
+      function update() {
+        var max = track.scrollWidth - track.clientWidth;
+        box.classList.toggle('no-scroll', max <= 2);
+        prev.disabled = track.scrollLeft <= 2;
+        next.disabled = track.scrollLeft >= max - 2;
+      }
+      prev.addEventListener('click', function () { track.scrollBy({ left: -step() }); });
+      next.addEventListener('click', function () { track.scrollBy({ left: step() }); });
+      track.addEventListener('scroll', function () { window.requestAnimationFrame(update); }, { passive: true });
+      track.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight') { e.preventDefault(); track.scrollBy({ left: step() }); }
+        if (e.key === 'ArrowLeft') { e.preventDefault(); track.scrollBy({ left: -step() }); }
+      });
+      window.addEventListener('resize', update);
+      update();
+    });
+  }
+
+  function init() { nextRace(); forms(); driverPage(); liveryCarousels(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
