@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-22T04:56:05Z",
+ "updated": "2026-10-23T02:56:20Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1562670015281627147",
+ "lastMessageId": "1563009739657584681",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden"
@@ -52,15 +52,24 @@
    "recent": []
   },
   "kai-collymore": {
-   "irating": 4434,
+   "irating": 4452,
    "peak": 4851,
    "add": {
-    "starts": 7,
+    "starts": 8,
     "wins": 0,
     "top5": 2
    },
-   "lastRace": "2026-10-22T02:00:00Z",
+   "lastRace": "2026-10-23T00:30:00Z",
    "recent": [
+    {
+     "start": "2026-10-23T00:30:00Z",
+     "series": "NASCAR Class A Series",
+     "track": "Talladega Superspeedway",
+     "finish": 12,
+     "field": 29,
+     "irating": 4452,
+     "change": 18
+    },
     {
      "start": "2026-10-22T02:00:00Z",
      "series": "NASCAR iRacing Class B Series",
@@ -96,15 +105,6 @@
      "field": 27,
      "irating": 4344,
      "change": -41
-    },
-    {
-     "start": "2026-10-21T02:30:00Z",
-     "series": "NASCAR Class A Series",
-     "track": "Talladega Superspeedway",
-     "finish": 19,
-     "field": 27,
-     "irating": 4385,
-     "change": -35
     }
    ]
   },
@@ -519,6 +519,19 @@
    "sof": "4359",
    "car": "NASCAR O'Reilly Ford Mustang",
    "start": "2026-10-22T02:00:00Z"
+  },
+  {
+   "id": "1563009739657584681",
+   "code": "B6FADB",
+   "series": "NASCAR Class A Series",
+   "track": "Talladega Superspeedway",
+   "finish": 12,
+   "field": 29,
+   "irating": 4452,
+   "change": 18,
+   "sof": "4240",
+   "car": "NASCAR Cup Series Next Gen Ford Mustang",
+   "start": "2026-10-23T00:30:00Z"
   }
  ]
 }
