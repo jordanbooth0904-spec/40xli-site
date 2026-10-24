@@ -1,23 +1,34 @@
 {
- "updated": "2026-10-23T04:55:08Z",
+ "updated": "2026-10-24T01:12:10Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1563047541858246687",
+ "lastMessageId": "1563349948651798571",
  "autoMatched": {
   "588053": "garrett-walden",
-  "GARRETT D WALDEN": "garrett-walden"
+  "GARRETT D WALDEN": "garrett-walden",
+  "B212AC": "jordan-booth"
  },
  "unmatchedCodes": [],
  "drivers": {
   "jordan-booth": {
-   "irating": 5222,
+   "irating": 5205,
    "peak": 5342,
    "add": {
-    "starts": 0,
+    "starts": 1,
     "wins": 0,
     "top5": 0
    },
-   "lastRace": null,
-   "recent": []
+   "lastRace": "2026-10-23T23:15:00Z",
+   "recent": [
+    {
+     "start": "2026-10-23T23:15:00Z",
+     "series": "NASCAR Class C Series - Fixed",
+     "track": "Talladega Superspeedway",
+     "finish": 10,
+     "field": 23,
+     "irating": 5205,
+     "change": -17
+    }
+   ]
   },
   "eric-labombard": {
    "irating": 6421,
@@ -52,15 +63,24 @@
    "recent": []
   },
   "kai-collymore": {
-   "irating": 4462,
+   "irating": 4539,
    "peak": 4851,
    "add": {
-    "starts": 9,
-    "wins": 0,
-    "top5": 2
+    "starts": 10,
+    "wins": 1,
+    "top5": 3
    },
-   "lastRace": "2026-10-23T02:30:00Z",
+   "lastRace": "2026-10-23T23:15:00Z",
    "recent": [
+    {
+     "start": "2026-10-23T23:15:00Z",
+     "series": "NASCAR Class C Series - Fixed",
+     "track": "Talladega Superspeedway",
+     "finish": 1,
+     "field": 23,
+     "irating": 4539,
+     "change": 77
+    },
     {
      "start": "2026-10-23T02:30:00Z",
      "series": "NASCAR Class A Series",
@@ -96,15 +116,6 @@
      "field": 28,
      "irating": 4398,
      "change": 2
-    },
-    {
-     "start": "2026-10-21T18:00:00Z",
-     "series": "NASCAR iRacing Class B Series",
-     "track": "Talladega Superspeedway",
-     "finish": 3,
-     "field": 26,
-     "irating": 4396,
-     "change": 52
     }
    ]
   },
@@ -545,6 +556,32 @@
    "sof": "3484",
    "car": "NASCAR Cup Series Next Gen Ford Mustang",
    "start": "2026-10-23T02:30:00Z"
+  },
+  {
+   "id": "1563349924668637307",
+   "code": "B212AC",
+   "series": "NASCAR Class C Series - Fixed",
+   "track": "Talladega Superspeedway",
+   "finish": 10,
+   "field": 23,
+   "irating": 5205,
+   "change": -17,
+   "sof": "3687",
+   "car": "NASCAR Truck Ford F150",
+   "start": "2026-10-23T23:15:00Z"
+  },
+  {
+   "id": "1563349948651798571",
+   "code": "B6FADB",
+   "series": "NASCAR Class C Series - Fixed",
+   "track": "Talladega Superspeedway",
+   "finish": 1,
+   "field": 23,
+   "irating": 4539,
+   "change": 77,
+   "sof": "3687",
+   "car": "NASCAR Truck Ford F150",
+   "start": "2026-10-23T23:15:00Z"
   }
  ]
 }
