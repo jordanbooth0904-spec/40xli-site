@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-25T08:52:56Z",
+ "updated": "2026-10-26T01:16:59Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1563821812343640115",
+ "lastMessageId": "1564075162952011959",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -49,15 +49,24 @@
    ]
   },
   "eric-labombard": {
-   "irating": 6421,
+   "irating": 6454,
    "peak": 6925,
    "add": {
-    "starts": 1,
-    "wins": 0,
-    "top5": 0
+    "starts": 2,
+    "wins": 1,
+    "top5": 1
    },
-   "lastRace": "2026-10-20T02:15:00Z",
+   "lastRace": "2026-10-25T23:30:00Z",
    "recent": [
+    {
+     "start": "2026-10-25T23:30:00Z",
+     "series": "NASCAR Gen 4 Grand National Series",
+     "track": "Martinsville Speedway",
+     "finish": 1,
+     "field": 17,
+     "irating": 6454,
+     "change": 33
+    },
     {
      "start": "2026-10-20T02:15:00Z",
      "series": "NASCAR Class C Series - Fixed",
@@ -691,6 +700,19 @@
    "sof": "2716",
    "car": "NASCAR O'Reilly Ford Mustang",
    "start": "2026-10-25T06:00:00Z"
+  },
+  {
+   "id": "1564075162952011959",
+   "code": "01B2F4",
+   "series": "NASCAR Gen 4 Grand National Series",
+   "track": "Martinsville Speedway",
+   "finish": 1,
+   "field": 17,
+   "irating": 6454,
+   "change": 33,
+   "sof": "3066",
+   "car": "Gen 4 Grand National",
+   "start": "2026-10-25T23:30:00Z"
   }
  ]
 }
