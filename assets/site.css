@@ -28,3 +28,14 @@ button[disabled] { opacity: .6; cursor: progress; }
 
 /* championships: equal-width cards so an odd one out doesn't stretch across the row */
 .champ-grid { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+
+/* home page photo header: full-width banner that fades into the headline */
+.home-banner {
+  height: clamp(240px, 38vw, 520px);
+  background:
+    linear-gradient(180deg, rgba(7,5,11,.15) 0%, rgba(7,5,11,0) 35%, rgba(7,5,11,.55) 75%, #07050B 100%),
+    url("img/home-hero-talladega-pack.jpg") 50% 52% / cover no-repeat;
+}
+.home-hero > section { position: relative; margin-top: clamp(-150px, -9vw, -40px) !important; padding-top: 0 !important; }
+.home-hero aside { background: rgba(15, 10, 22, .9) !important; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+.home-hero h1 { text-shadow: 0 4px 24px rgba(7,5,11,.6); }
