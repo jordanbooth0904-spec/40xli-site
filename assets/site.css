@@ -25,3 +25,6 @@ button[disabled] { opacity: .6; cursor: progress; }
 .lc-next { right: -14px; }
 .livery-carousel.no-scroll .lc-btn { display: none; }
 @media (max-width: 760px) { .lc-prev { left: 4px; } .lc-next { right: 4px; } }
+
+/* championships: equal-width cards so an odd one out doesn't stretch across the row */
+.champ-grid { display: grid !important; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
