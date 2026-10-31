@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-31T01:25:09Z",
+ "updated": "2026-10-31T22:54:15Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1565871186699878695",
+ "lastMessageId": "1566204049613918219",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -49,15 +49,24 @@
    ]
   },
   "eric-labombard": {
-   "irating": 6363,
+   "irating": 6389,
    "peak": 6925,
    "add": {
-    "starts": 6,
+    "starts": 7,
     "wins": 2,
-    "top5": 3
+    "top5": 4
    },
-   "lastRace": "2026-10-30T22:00:00Z",
+   "lastRace": "2026-10-31T20:15:00Z",
    "recent": [
+    {
+     "start": "2026-10-31T20:15:00Z",
+     "series": "NASCAR Class C Series - Fixed",
+     "track": "Martinsville Speedway",
+     "finish": 2,
+     "field": 19,
+     "irating": 6389,
+     "change": 26
+    },
     {
      "start": "2026-10-30T22:00:00Z",
      "series": "NASCAR Class A Series - Fixed",
@@ -93,15 +102,6 @@
      "field": 16,
      "irating": 6480,
      "change": 26
-    },
-    {
-     "start": "2026-10-25T23:30:00Z",
-     "series": "NASCAR Gen 4 Grand National Series",
-     "track": "Martinsville Speedway",
-     "finish": 1,
-     "field": 17,
-     "irating": 6454,
-     "change": 33
     }
    ]
   },
@@ -844,6 +844,19 @@
    "sof": "3531",
    "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
    "start": "2026-10-30T22:00:00Z"
+  },
+  {
+   "id": "1566204049613918219",
+   "code": "01B2F4",
+   "series": "NASCAR Class C Series - Fixed",
+   "track": "Martinsville Speedway",
+   "finish": 2,
+   "field": 19,
+   "irating": 6389,
+   "change": 26,
+   "sof": "3150",
+   "car": "NASCAR Truck Chevrolet Silverado",
+   "start": "2026-10-31T20:15:00Z"
   }
  ]
 }
