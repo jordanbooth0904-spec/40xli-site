@@ -1,7 +1,7 @@
 {
-  "version": "1.3.0",
+  "version": "1.3.1",
   "url": "https://40xli.com/overlays/download/",
-  "notes": "Updates now install inside the app: no more installers. Download happens in the background and the new version starts next time you open the app (or click Restart to update).",
-  "patch": { "url": "https://40xli.com/overlays/files/40XLI-Overlays-Update-1.3.0.hud", "sha256": "29a2aa616646d13616a22b4ee952e7ccd3e8cd0822690fdba3a552b2f365f431", "size": 170764, "shell": 1 },
-  "installer": { "url": "https://40xli.com/overlays/files/40XLI-Overlays-Setup-1.3.0.exe", "sha256": "5c5f5426df23956857c7e195ea033b5900fd81441cf263dc215d23db81aafd47", "size": 84385462 }
+  "notes": "New 40XLI logo icon for the app, tray, desktop and Start menu.",
+  "patch": { "url": "https://40xli.com/overlays/files/40XLI-Overlays-Update-1.3.1.hud", "sha256": "ba161bf6d30f1fbe287db26c69f90c9368f13376c6c0207104f0254f2af94b57", "size": 223707, "shell": 1 },
+  "installer": { "url": "https://40xli.com/overlays/files/40XLI-Overlays-Setup-1.3.1.exe", "sha256": "8a53d8e64042e2a0f8871949451907260a41e204873b1aefbe713bd53e2ae5ff", "size": 84421453 }
 }
