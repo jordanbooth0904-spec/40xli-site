@@ -34,7 +34,7 @@ button[disabled] { opacity: .6; cursor: progress; }
   height: clamp(220px, 34vw, 480px);
   background:
     linear-gradient(180deg, rgba(7,5,11,0) 0%, rgba(7,5,11,0) 70%, #07050B 100%),
-    url("img/home-hero-talladega-pack.jpg") 50% 50% / cover no-repeat;
+    url("img/home-hero-talladega-pack.jpg?v=2") 50% 50% / cover no-repeat;
 }
 .home-hero > section { position: relative; padding-top: 56px !important; }
 @media (max-width: 760px) { .home-hero > section { padding-top: 32px !important; } }
