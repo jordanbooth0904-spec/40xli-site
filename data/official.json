@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-02T05:22:55Z",
+ "updated": "2026-11-03T01:28:46Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1566672335162052641",
+ "lastMessageId": "1566956882743140456",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -49,15 +49,24 @@
    ]
   },
   "eric-labombard": {
-   "irating": 6416,
+   "irating": 6447,
    "peak": 6925,
    "add": {
-    "starts": 8,
-    "wins": 2,
-    "top5": 5
+    "starts": 9,
+    "wins": 3,
+    "top5": 6
    },
-   "lastRace": "2026-11-02T03:15:00Z",
+   "lastRace": "2026-11-02T22:15:00Z",
    "recent": [
+    {
+     "start": "2026-11-02T22:15:00Z",
+     "series": "NASCAR Class C Series - Fixed",
+     "track": "Martinsville Speedway",
+     "finish": 1,
+     "field": 21,
+     "irating": 6447,
+     "change": 31
+    },
     {
      "start": "2026-11-02T03:15:00Z",
      "series": "NASCAR Class C Series - Fixed",
@@ -93,15 +102,6 @@
      "field": 23,
      "irating": 6381,
      "change": 11
-    },
-    {
-     "start": "2026-10-27T02:00:00Z",
-     "series": "NASCAR Class A Series - Fixed",
-     "track": "Martinsville Speedway",
-     "finish": 18,
-     "field": 23,
-     "irating": 6370,
-     "change": -110
     }
    ]
   },
@@ -870,6 +870,19 @@
    "sof": "4057",
    "car": "NASCAR Truck Chevrolet Silverado",
    "start": "2026-11-02T03:15:00Z"
+  },
+  {
+   "id": "1566956648327684198",
+   "code": "01B2F4",
+   "series": "NASCAR Class C Series - Fixed",
+   "track": "Martinsville Speedway",
+   "finish": 1,
+   "field": 21,
+   "irating": 6447,
+   "change": 31,
+   "sof": "3052",
+   "car": "NASCAR Truck Chevrolet Silverado",
+   "start": "2026-11-02T22:15:00Z"
   }
  ]
 }
