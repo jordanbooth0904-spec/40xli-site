@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-09T05:27:27Z",
+ "updated": "2026-11-09T21:11:56Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1569201541624111117",
+ "lastMessageId": "1569447343143522354",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -117,15 +117,24 @@
    "recent": []
   },
   "kai-collymore": {
-   "irating": 4617,
+   "irating": 4568,
    "peak": 4851,
    "add": {
-    "starts": 19,
+    "starts": 20,
     "wins": 4,
     "top5": 9
    },
-   "lastRace": "2026-10-26T22:00:00Z",
+   "lastRace": "2026-11-09T18:45:00Z",
    "recent": [
+    {
+     "start": "2026-11-09T18:45:00Z",
+     "series": "NASCAR iRacing Class C Series",
+     "track": "Homestead Miami Speedway",
+     "finish": 13,
+     "field": 20,
+     "irating": 4568,
+     "change": -49
+    },
     {
      "start": "2026-10-26T22:00:00Z",
      "series": "NASCAR iRacing Class B Series",
@@ -161,15 +170,6 @@
      "field": 22,
      "irating": 4623,
      "change": 50
-    },
-    {
-     "start": "2026-10-25T06:00:00Z",
-     "series": "NASCAR iRacing Class B Series",
-     "track": "Talladega Superspeedway",
-     "finish": 1,
-     "field": 25,
-     "irating": 4573,
-     "change": 53
     }
    ]
   },
@@ -935,6 +935,19 @@
    "sof": "3804",
    "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
    "start": "2026-11-09T02:30:00Z"
+  },
+  {
+   "id": "1569439786912059525",
+   "code": "B6FADB",
+   "series": "NASCAR iRacing Class C Series",
+   "track": "Homestead Miami Speedway",
+   "finish": 13,
+   "field": 20,
+   "irating": 4568,
+   "change": -49,
+   "sof": "3351",
+   "car": "NASCAR Truck Ford F150",
+   "start": "2026-11-09T18:45:00Z"
   }
  ]
 }
