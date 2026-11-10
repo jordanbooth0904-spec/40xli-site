@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-10T01:28:41Z",
+ "updated": "2026-11-10T03:08:38Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1569515077193699441",
+ "lastMessageId": "1569548186387882068",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -117,15 +117,24 @@
    "recent": []
   },
   "kai-collymore": {
-   "irating": 4468,
+   "irating": 4505,
    "peak": 4851,
    "add": {
-    "starts": 21,
+    "starts": 22,
     "wins": 4,
     "top5": 9
    },
-   "lastRace": "2026-11-09T20:00:00Z",
+   "lastRace": "2026-11-10T01:30:00Z",
    "recent": [
+    {
+     "start": "2026-11-10T01:30:00Z",
+     "series": "NASCAR 1987 Legends Cup",
+     "track": "Talladega Superspeedway",
+     "finish": 8,
+     "field": 23,
+     "irating": 4505,
+     "change": 37
+    },
     {
      "start": "2026-11-09T20:00:00Z",
      "series": "NASCAR iRacing Class B Series",
@@ -161,15 +170,6 @@
      "field": 25,
      "irating": 4558,
      "change": -117
-    },
-    {
-     "start": "2026-10-26T04:00:00Z",
-     "series": "NASCAR iRacing Class B Series",
-     "track": "Talladega Superspeedway",
-     "finish": 1,
-     "field": 22,
-     "irating": 4675,
-     "change": 52
     }
    ]
   },
@@ -961,6 +961,19 @@
    "sof": "3072",
    "car": "NASCAR O'Reilly Ford Mustang",
    "start": "2026-11-09T20:00:00Z"
+  },
+  {
+   "id": "1569548186387882068",
+   "code": "B6FADB",
+   "series": "NASCAR 1987 Legends Cup",
+   "track": "Talladega Superspeedway",
+   "finish": 8,
+   "field": 23,
+   "irating": 4505,
+   "change": 37,
+   "sof": "4554",
+   "car": "NASCAR Legends Chevrolet Monte Carlo - 1987",
+   "start": "2026-11-10T01:30:00Z"
   }
  ]
 }
