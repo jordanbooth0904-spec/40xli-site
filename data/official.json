@@ -1,11 +1,12 @@
 {
- "updated": "2026-11-11T03:11:58Z",
+ "updated": "2026-11-12T01:38:36Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1569892091121893407",
+ "lastMessageId": "1570232652127146066",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
-  "B212AC": "jordan-booth"
+  "B212AC": "jordan-booth",
+  "A732C1": "corey-ennis"
  },
  "unmatchedCodes": [],
  "drivers": {
@@ -49,15 +50,24 @@
    ]
   },
   "eric-labombard": {
-   "irating": 6448,
+   "irating": 6434,
    "peak": 6925,
    "add": {
-    "starts": 13,
+    "starts": 14,
     "wins": 5,
     "top5": 8
    },
-   "lastRace": "2026-11-09T02:30:00Z",
+   "lastRace": "2026-11-11T22:00:00Z",
    "recent": [
+    {
+     "start": "2026-11-11T22:00:00Z",
+     "series": "NASCAR Class A Series - Fixed",
+     "track": "Michigan International Speedway",
+     "finish": 8,
+     "field": 23,
+     "irating": 6434,
+     "change": -14
+    },
     {
      "start": "2026-11-09T02:30:00Z",
      "series": "NASCAR Class A Series",
@@ -93,15 +103,6 @@
      "field": 24,
      "irating": 6495,
      "change": 48
-    },
-    {
-     "start": "2026-11-02T22:15:00Z",
-     "series": "NASCAR Class C Series - Fixed",
-     "track": "Martinsville Speedway",
-     "finish": 1,
-     "field": 21,
-     "irating": 6447,
-     "change": 31
     }
    ]
   },
@@ -196,15 +197,25 @@
    "recent": []
   },
   "corey-ennis": {
-   "irating": 2604,
+   "irating": 2667,
    "peak": 3388,
    "add": {
-    "starts": 0,
+    "starts": 1,
     "wins": 0,
-    "top5": 0
+    "top5": 1
    },
-   "lastRace": null,
-   "recent": []
+   "lastRace": "2026-11-11T22:30:00Z",
+   "recent": [
+    {
+     "start": "2026-11-11T22:30:00Z",
+     "series": "NASCAR Class A Series",
+     "track": "Michigan International Speedway",
+     "finish": 4,
+     "field": 29,
+     "irating": 2667,
+     "change": 63
+    }
+   ]
   }
  },
  "posts": [
@@ -987,6 +998,32 @@
    "sof": "4757",
    "car": "NASCAR Legends Chevrolet Monte Carlo - 1987",
    "start": "2026-11-10T03:30:00Z"
+  },
+  {
+   "id": "1570215640705532066",
+   "code": "01B2F4",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Michigan International Speedway",
+   "finish": 8,
+   "field": 23,
+   "irating": 6434,
+   "change": -14,
+   "sof": "3866",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-11-11T22:00:00Z"
+  },
+  {
+   "id": "1570226222934528002",
+   "code": "A732C1",
+   "series": "NASCAR Class A Series",
+   "track": "Michigan International Speedway",
+   "finish": 4,
+   "field": 29,
+   "irating": 2667,
+   "change": 63,
+   "sof": "2236",
+   "car": "NASCAR Cup Series Next Gen Toyota Camry",
+   "start": "2026-11-11T22:30:00Z"
   }
  ]
 }
