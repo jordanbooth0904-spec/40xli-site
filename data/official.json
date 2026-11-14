@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-14T19:09:26Z",
+ "updated": "2026-11-14T23:59:01Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1571222166673035368",
+ "lastMessageId": "1571282222793883670",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -50,15 +50,33 @@
    ]
   },
   "eric-labombard": {
-   "irating": 6347,
+   "irating": 6346,
    "peak": 6925,
    "add": {
-    "starts": 15,
+    "starts": 17,
     "wins": 5,
-    "top5": 8
+    "top5": 9
    },
-   "lastRace": "2026-11-13T02:30:00Z",
+   "lastRace": "2026-11-14T20:45:00Z",
    "recent": [
+    {
+     "start": "2026-11-14T20:45:00Z",
+     "series": "ARCA Menards Series",
+     "track": "Homestead Miami Speedway",
+     "finish": 10,
+     "field": 23,
+     "irating": 6346,
+     "change": -28
+    },
+    {
+     "start": "2026-11-14T18:30:00Z",
+     "series": "NASCAR Class A Series",
+     "track": "Michigan International Speedway",
+     "finish": 4,
+     "field": 26,
+     "irating": 6374,
+     "change": 27
+    },
     {
      "start": "2026-11-13T02:30:00Z",
      "series": "NASCAR Class A Series",
@@ -85,24 +103,6 @@
      "field": 22,
      "irating": 6448,
      "change": -84
-    },
-    {
-     "start": "2026-11-05T22:00:00Z",
-     "series": "NASCAR Class A Series - Fixed",
-     "track": "Homestead Miami Speedway",
-     "finish": 1,
-     "field": 23,
-     "irating": 6532,
-     "change": 33
-    },
-    {
-     "start": "2026-11-05T00:00:00Z",
-     "series": "NASCAR Class A Series - Fixed",
-     "track": "Homestead Miami Speedway",
-     "finish": 7,
-     "field": 30,
-     "irating": 6499,
-     "change": 4
     }
    ]
   },
@@ -1050,6 +1050,32 @@
    "sof": "2671",
    "car": "Ford Mustang GT3",
    "start": "2026-11-14T17:15:00Z"
+  },
+  {
+   "id": "1571256533394784321",
+   "code": "01B2F4",
+   "series": "NASCAR Class A Series",
+   "track": "Michigan International Speedway",
+   "finish": 4,
+   "field": 26,
+   "irating": 6374,
+   "change": 27,
+   "sof": "3929",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-11-14T18:30:00Z"
+  },
+  {
+   "id": "1571282222793883670",
+   "code": "01B2F4",
+   "series": "ARCA Menards Series",
+   "track": "Homestead Miami Speedway",
+   "finish": 10,
+   "field": 23,
+   "irating": 6346,
+   "change": -28,
+   "sof": "3822",
+   "car": "ARCA Chevrolet SS",
+   "start": "2026-11-14T20:45:00Z"
   }
  ]
 }
