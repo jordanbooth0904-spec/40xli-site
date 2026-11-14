@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-13T05:21:13Z",
+ "updated": "2026-11-14T19:09:26Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1570657705071222786",
+ "lastMessageId": "1571222166673035368",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -1037,6 +1037,19 @@
    "sof": "4152",
    "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
    "start": "2026-11-13T02:30:00Z"
+  },
+  {
+   "id": "1571222166673035368",
+   "code": "01B2F4",
+   "series": "GT3 Challenge Fixed by Fanatec",
+   "track": "Fuji International Speedway",
+   "finish": 19,
+   "field": 19,
+   "irating": 2538,
+   "change": -93,
+   "sof": "2671",
+   "car": "Ford Mustang GT3",
+   "start": "2026-11-14T17:15:00Z"
   }
  ]
 }
