@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-14T23:59:01Z",
+ "updated": "2026-11-17T04:37:37Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1571282222793883670",
+ "lastMessageId": "1572061226970648637",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -197,15 +197,24 @@
    "recent": []
   },
   "corey-ennis": {
-   "irating": 2667,
+   "irating": 2755,
    "peak": 3388,
    "add": {
-    "starts": 1,
+    "starts": 2,
     "wins": 0,
-    "top5": 1
+    "top5": 2
    },
-   "lastRace": "2026-11-11T22:30:00Z",
+   "lastRace": "2026-11-17T00:00:00Z",
    "recent": [
+    {
+     "start": "2026-11-17T00:00:00Z",
+     "series": "NASCAR Class A Series - Fixed",
+     "track": "Kentucky Speedway",
+     "finish": 2,
+     "field": 23,
+     "irating": 2755,
+     "change": 88
+    },
     {
      "start": "2026-11-11T22:30:00Z",
      "series": "NASCAR Class A Series",
@@ -1076,6 +1085,19 @@
    "sof": "3822",
    "car": "ARCA Chevrolet SS",
    "start": "2026-11-14T20:45:00Z"
+  },
+  {
+   "id": "1572061226970648637",
+   "code": "A732C1",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Kentucky Speedway",
+   "finish": 2,
+   "field": 23,
+   "irating": 2755,
+   "change": 88,
+   "sof": "2639",
+   "car": "NASCAR Cup Series Next Gen Toyota Camry",
+   "start": "2026-11-17T00:00:00Z"
   }
  ]
 }
