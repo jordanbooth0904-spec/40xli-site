@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-22T02:21:48Z",
+ "updated": "2026-11-22T09:59:42Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1573813952222072943",
+ "lastMessageId": "1573899467743166525",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -50,15 +50,24 @@
    ]
   },
   "eric-labombard": {
-   "irating": 6356,
+   "irating": 6227,
    "peak": 6925,
    "add": {
-    "starts": 18,
+    "starts": 19,
     "wins": 5,
     "top5": 10
    },
-   "lastRace": "2026-11-21T20:15:00Z",
+   "lastRace": "2026-11-22T02:00:00Z",
    "recent": [
+    {
+     "start": "2026-11-22T02:00:00Z",
+     "series": "NASCAR Class A Series - Fixed",
+     "track": "Kentucky Speedway",
+     "finish": 24,
+     "field": 27,
+     "irating": 6227,
+     "change": -129
+    },
     {
      "start": "2026-11-21T20:15:00Z",
      "series": "NASCAR Class C Series - Fixed",
@@ -94,15 +103,6 @@
      "field": 30,
      "irating": 6347,
      "change": -87
-    },
-    {
-     "start": "2026-11-11T22:00:00Z",
-     "series": "NASCAR Class A Series - Fixed",
-     "track": "Michigan International Speedway",
-     "finish": 8,
-     "field": 23,
-     "irating": 6434,
-     "change": -14
     }
    ]
   },
@@ -1124,6 +1124,19 @@
    "sof": "4000",
    "car": "NASCAR Truck Chevrolet Silverado",
    "start": "2026-11-21T20:15:00Z"
+  },
+  {
+   "id": "1573899467743166525",
+   "code": "01B2F4",
+   "series": "NASCAR Class A Series - Fixed",
+   "track": "Kentucky Speedway",
+   "finish": 24,
+   "field": 27,
+   "irating": 6227,
+   "change": -129,
+   "sof": "3219",
+   "car": "NASCAR Cup Series Next Gen Chevrolet Camaro ZL1",
+   "start": "2026-11-22T02:00:00Z"
   }
  ]
 }
