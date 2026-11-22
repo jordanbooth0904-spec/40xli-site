@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-17T04:37:37Z",
+ "updated": "2026-11-22T02:21:48Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1572061226970648637",
+ "lastMessageId": "1573813952222072943",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -50,15 +50,24 @@
    ]
   },
   "eric-labombard": {
-   "irating": 6346,
+   "irating": 6356,
    "peak": 6925,
    "add": {
-    "starts": 17,
+    "starts": 18,
     "wins": 5,
-    "top5": 9
+    "top5": 10
    },
-   "lastRace": "2026-11-14T20:45:00Z",
+   "lastRace": "2026-11-21T20:15:00Z",
    "recent": [
+    {
+     "start": "2026-11-21T20:15:00Z",
+     "series": "NASCAR Class C Series - Fixed",
+     "track": "Auto Club Speedway",
+     "finish": 5,
+     "field": 20,
+     "irating": 6356,
+     "change": 10
+    },
     {
      "start": "2026-11-14T20:45:00Z",
      "series": "ARCA Menards Series",
@@ -94,15 +103,6 @@
      "field": 23,
      "irating": 6434,
      "change": -14
-    },
-    {
-     "start": "2026-11-09T02:30:00Z",
-     "series": "NASCAR Class A Series",
-     "track": "Homestead Miami Speedway",
-     "finish": 15,
-     "field": 22,
-     "irating": 6448,
-     "change": -84
     }
    ]
   },
@@ -1098,6 +1098,32 @@
    "sof": "2639",
    "car": "NASCAR Cup Series Next Gen Toyota Camry",
    "start": "2026-11-17T00:00:00Z"
+  },
+  {
+   "id": "1573802697620979805",
+   "code": "01B2F4",
+   "series": "FIA Formula 4 Challenge - Fixed",
+   "track": "St. Petersburg Grand Prix",
+   "finish": 19,
+   "field": 19,
+   "irating": 1641,
+   "change": -66,
+   "sof": "2285",
+   "car": "FIA F4",
+   "start": "2026-11-21T20:00:00Z"
+  },
+  {
+   "id": "1573813952222072943",
+   "code": "01B2F4",
+   "series": "NASCAR Class C Series - Fixed",
+   "track": "Auto Club Speedway",
+   "finish": 5,
+   "field": 20,
+   "irating": 6356,
+   "change": 10,
+   "sof": "4000",
+   "car": "NASCAR Truck Chevrolet Silverado",
+   "start": "2026-11-21T20:15:00Z"
   }
  ]
 }
