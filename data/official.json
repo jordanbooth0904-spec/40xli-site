@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-24T17:57:45Z",
+ "updated": "2026-11-25T02:37:11Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1574773641747505284",
+ "lastMessageId": "1574952407266365583",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -1150,6 +1150,19 @@
    "sof": "3173",
    "car": "NASCAR Truck Chevrolet Silverado",
    "start": "2026-11-23T19:15:00Z"
+  },
+  {
+   "id": "1574952407266365583",
+   "code": "01B2F4",
+   "series": "IMSA iRacing Series - Fixed by GO Fast",
+   "track": "Sebring International Raceway",
+   "finish": 12,
+   "field": 13,
+   "irating": 2490,
+   "change": -48,
+   "sof": "3459",
+   "car": "Cadillac V-Series.R GTP",
+   "start": "2026-11-24T23:45:00Z"
   }
  ]
 }
