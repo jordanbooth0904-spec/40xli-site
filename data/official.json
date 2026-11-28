@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-27T14:03:17Z",
+ "updated": "2026-11-28T08:06:04Z",
  "cutoff": "2026-10-19T12:00:00Z",
- "lastMessageId": "1575755451369259039",
+ "lastMessageId": "1576123361027690497",
  "autoMatched": {
   "588053": "garrett-walden",
   "GARRETT D WALDEN": "garrett-walden",
@@ -118,15 +118,51 @@
    "recent": []
   },
   "kai-collymore": {
-   "irating": 4427,
+   "irating": 4277,
    "peak": 4851,
    "add": {
-    "starts": 25,
+    "starts": 29,
     "wins": 4,
     "top5": 9
    },
-   "lastRace": "2026-11-27T05:15:00Z",
+   "lastRace": "2026-11-28T05:15:00Z",
    "recent": [
+    {
+     "start": "2026-11-28T05:15:00Z",
+     "series": "INDYCAR Series - Oval - Fixed",
+     "track": "[Legacy] Michigan International Speedway - 2009",
+     "finish": 11,
+     "field": 18,
+     "irating": 4277,
+     "change": -65
+    },
+    {
+     "start": "2026-11-28T04:15:00Z",
+     "series": "INDYCAR Series - Oval - Fixed",
+     "track": "[Legacy] Michigan International Speedway - 2009",
+     "finish": 8,
+     "field": 14,
+     "irating": 4342,
+     "change": -31
+    },
+    {
+     "start": "2026-11-28T03:15:00Z",
+     "series": "INDYCAR Series - Oval - Fixed",
+     "track": "[Legacy] Michigan International Speedway - 2009",
+     "finish": 12,
+     "field": 26,
+     "irating": 4373,
+     "change": -44
+    },
+    {
+     "start": "2026-11-28T02:15:00Z",
+     "series": "INDYCAR Series - Oval - Fixed",
+     "track": "[Legacy] Michigan International Speedway - 2009",
+     "finish": 8,
+     "field": 25,
+     "irating": 4417,
+     "change": -10
+    },
     {
      "start": "2026-11-27T05:15:00Z",
      "series": "INDYCAR Series - Oval - Fixed",
@@ -135,42 +171,6 @@
      "field": 18,
      "irating": 4427,
      "change": -93
-    },
-    {
-     "start": "2026-11-27T02:00:00Z",
-     "series": "Winter iRacing NASCAR Gen 4 Cup",
-     "track": "Talladega Superspeedway",
-     "finish": 11,
-     "field": 38,
-     "irating": 4520,
-     "change": 68
-    },
-    {
-     "start": "2026-11-10T03:30:00Z",
-     "series": "NASCAR 1987 Legends Cup",
-     "track": "Talladega Superspeedway",
-     "finish": 20,
-     "field": 24,
-     "irating": 4452,
-     "change": -53
-    },
-    {
-     "start": "2026-11-10T01:30:00Z",
-     "series": "NASCAR 1987 Legends Cup",
-     "track": "Talladega Superspeedway",
-     "finish": 8,
-     "field": 23,
-     "irating": 4505,
-     "change": 37
-    },
-    {
-     "start": "2026-11-09T20:00:00Z",
-     "series": "NASCAR iRacing Class B Series",
-     "track": "Homestead Miami Speedway",
-     "finish": 19,
-     "field": 22,
-     "irating": 4468,
-     "change": -100
     }
    ]
   },
@@ -1189,6 +1189,71 @@
    "sof": "2073",
    "car": "Dallara IR18",
    "start": "2026-11-27T05:15:00Z"
+  },
+  {
+   "id": "1576050157051453632",
+   "code": "B6FADB",
+   "series": "FIA Formula 4 Challenge - Fixed",
+   "track": "Circuito de Navarra",
+   "finish": 17,
+   "field": 19,
+   "irating": 657,
+   "change": -55,
+   "sof": "978",
+   "car": "FIA F4",
+   "start": "2026-11-28T01:00:00Z"
+  },
+  {
+   "id": "1576082293280215082",
+   "code": "B6FADB",
+   "series": "INDYCAR Series - Oval - Fixed",
+   "track": "[Legacy] Michigan International Speedway - 2009",
+   "finish": 8,
+   "field": 25,
+   "irating": 4417,
+   "change": -10,
+   "sof": "2124",
+   "car": "Dallara IR18",
+   "start": "2026-11-28T02:15:00Z"
+  },
+  {
+   "id": "1576093245782364202",
+   "code": "B6FADB",
+   "series": "INDYCAR Series - Oval - Fixed",
+   "track": "[Legacy] Michigan International Speedway - 2009",
+   "finish": 12,
+   "field": 26,
+   "irating": 4373,
+   "change": -44,
+   "sof": "2033",
+   "car": "Dallara IR18",
+   "start": "2026-11-28T03:15:00Z"
+  },
+  {
+   "id": "1576102917285478522",
+   "code": "B6FADB",
+   "series": "INDYCAR Series - Oval - Fixed",
+   "track": "[Legacy] Michigan International Speedway - 2009",
+   "finish": 8,
+   "field": 14,
+   "irating": 4342,
+   "change": -31,
+   "sof": "3206",
+   "car": "Dallara IR18",
+   "start": "2026-11-28T04:15:00Z"
+  },
+  {
+   "id": "1576123361027690497",
+   "code": "B6FADB",
+   "series": "INDYCAR Series - Oval - Fixed",
+   "track": "[Legacy] Michigan International Speedway - 2009",
+   "finish": 11,
+   "field": 18,
+   "irating": 4277,
+   "change": -65,
+   "sof": "2335",
+   "car": "Dallara IR18",
+   "start": "2026-11-28T05:15:00Z"
   }
  ]
 }
